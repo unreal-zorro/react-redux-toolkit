@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import PostContainer from "./components/PostContainer";
+import PostContainer2 from "./components/PostContainer2";
+import UserItem from "./components/UserItem";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Списки пользователей и постов!</h1>
+      <hr />
+      <UserItem />
+      <hr />
+      <div style={{display: "flex"}}>
+        <PostContainer />
+        <PostContainer2 />
+      </div>
     </div>
   );
 }
