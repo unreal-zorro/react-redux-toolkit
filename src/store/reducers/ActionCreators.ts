@@ -1,7 +1,5 @@
-import {AppDispatch} from "../store";
 import axios from "axios";
 import {IUser} from "../../models/IUser";
-import {userSlice} from "./UserSlice";
 import {createAsyncThunk} from "@reduxjs/toolkit";
 
 // export const fetchUsers = () => async (dispatch: AppDispatch) => {
@@ -12,6 +10,8 @@ import {createAsyncThunk} from "@reduxjs/toolkit";
 //   } catch (e) {
 //     if (e instanceof Error) {
 //       dispatch(userSlice.actions.usersFetchingError(e.message));
+//     } else {
+//       dispatch(userSlice.actions.usersFetchingError("Произошла непредвиденная ошибка"));
 //     }
 //   }
 // }
